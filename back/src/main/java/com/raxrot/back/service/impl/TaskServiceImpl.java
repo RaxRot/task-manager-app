@@ -11,10 +11,12 @@ import com.raxrot.back.service.TaskService;
 import com.raxrot.back.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class TaskServiceImpl implements TaskService {
     private final TaskRepository taskRepository;
     private final UserService userService;
