@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
@@ -20,5 +21,5 @@ public class TaskResponse {
     private Priority priority;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-    private LocalDateTime dueDate;
+    private LocalDate dueDate;
 }
